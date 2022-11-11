@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./script.js"></script>
+    <title>Clima da Cidade</title>
+  </head>
+  <body>
+    <main>
+      <div class="titulo">
+        <span>Clima da Cidade</span>
+      </div>
+      <form action="./index.html">
+        <input
+          autocomplete="off"
+          type="
+            search"
+          placeholder="Procurar Cidade"
+          name="search"
+          id="cidade-input"
+          value=""
+        />
+        <button id="search">
+          <img src="./img/icon-search.svg" alt="Pesquisar" />
+        </button>
+      </form>
+      <div class="content hide">
+        <div class="cidades">
+          <p>
+            <span class="cidade"></span>
+            <img class="icon-pais" src="" alt="" />
+          </p>
+          <h2 class="data"></h2>
+        </div>
+        <div class="resultado">
+          <div class="temperatura">
+            <p class="temperatura-cidade"><span></span>&deg;C</p>
+            <h3 class="descricao-clima"></h3>
+          </div>
+          <div class="icon-clima">
+            <img src="" alt="" />
+          </div>
+        </div>
+        <div class="detalhes">
+          <div class="info">
+            <span class="title-hora">HORA</span>
+            <p><span class="horas"></span></p>
+          </div>
+          <div class="info">
+            <span class="title-umidade">UMIDADE</span>
+            <p>
+              <span class="porcentagem-umidade"></span>
+              %
+            </p>
+          </div>
+          <div class="info">
+            <span class="title-vento">VENTO</span>
+            <p><span class="velocidade-vento"></span>Km/h</p>
+          </div>
+        </div>
+      </div>
+      <div id="loader" class="hide">
+        <i class="fa-solid fa-spinner"></i>
+      </div>
+    </main>
+  </body>
+</html>
