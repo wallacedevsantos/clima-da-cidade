@@ -7,11 +7,8 @@
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    rgba(115, 114, 251, 1) 0%,
-    rgba(226, 239, 255, 1) 100%
-  );
+  background-image: url("https://source.unsplash.com/featured/1600x900?weather");
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -99,7 +96,6 @@ input {
 
 .cidades p {
   font-size: 1.3rem;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,12 +109,13 @@ input {
 }
 
 .icon-pais {
-  width: 30px;
+  width: 1.5rem;
   transition: all 1s;
 }
 
 .resultado {
-  margin-top: 1rem;
+  margin: 1rem;
+  gap: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,6 +124,7 @@ input {
 }
 
 .resultado .temperatura {
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;

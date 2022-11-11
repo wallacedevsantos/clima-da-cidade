@@ -77,7 +77,7 @@ const showWeatherData = async (city) => {
 searchBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  const city = cidadeInput.value;
+  const city = cidadeInput.value.trim();
 
   showWeatherData(city);
   document.getElementById("#cidade-input").value = "";
