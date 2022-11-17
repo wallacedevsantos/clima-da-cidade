@@ -171,6 +171,20 @@ input {
   transition: all 1s;
 }
 
+.detalhes-temp {
+  margin-top: 1rem;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: #fdfcfc;
+  opacity: 75%;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  transition: all 1s;
+}
+
 .info {
   display: flex;
   flex-direction: column;

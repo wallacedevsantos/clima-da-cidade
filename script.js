@@ -17,6 +17,8 @@ const iconClimaElemento = document.querySelector(".icon-clima img");
 const horasElemento = document.querySelector(".horas");
 const umidadeElemento = document.querySelector(".porcentagem-umidade");
 const ventoElemento = document.querySelector(".velocidade-vento");
+const tempMaxima = document.querySelector(".temperatura-max span");
+const tempMinima = document.querySelector(".temperatura-min span");
 const backgrounElemento = document.querySelector("body");
 
 const loader = document.querySelector("#loader");
@@ -66,6 +68,9 @@ const showWeatherData = async (city) => {
     day: "numeric",
     month: "long",
   });
+
+  tempMaxima.innerHTML = parseInt(data.main.temp_max);
+  tempMinima.innerHTML = parseInt(data.main.temp_min);
 
   document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
 
