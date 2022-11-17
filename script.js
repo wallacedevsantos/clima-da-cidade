@@ -85,5 +85,4 @@ searchBtn.addEventListener("click", (e) => {
   const city = cidadeInput.value.trim();
 
   showWeatherData(city);
-  document.getElementById("#cidade-input").value = "";
 });
